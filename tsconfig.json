@@ -11,7 +11,8 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
-    "skipLibCheck": true,
+    // "suppressImplicitAnyIndexErrors": true, //解决用字符串做下标报错
+    "skipLibCheck": true, //解决打包报'vue-tsc --noEmit && vite build'的错，忽略所有的声明
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
